@@ -14712,23 +14712,9 @@ Error generating stack: ` + n.message + `
         price: "$497",
         label: "One-time",
         tagline: "Get up and running fast",
-        color: "#6F6A63",
-        features: ["1 Strategy Session", "1 Hour Training", "2 Custom SubAgents Built", "Initial Integration Setup", "Agent Configuration", "30 Days Customer Support"]
-      }, {
-        name: "Build",
-        price: "$697",
-        label: "One-time",
-        tagline: "More power, more automation",
         color: "#D62A2A",
         highlighted: !0,
-        features: ["2 Strategy Sessions", "3 Hours Training", "5 Custom SubAgents Built", "Advanced Integration Setup", "Workflow Buildout", "Agent Optimization", "60 Days Customer Support"]
-      }, {
-        name: "Scale",
-        price: "$997",
-        label: "One-time",
-        tagline: "Full build-out for serious teams",
-        color: "#111111",
-        features: ["3 Strategy Sessions", "6 Hours Training", "10 Custom SubAgents Built", "Full Integration Suite", "Custom Workflow Architecture", "Priority Onboarding", "Dedicated Setup Manager", "90 Days Customer Support"]
+        features: ["1 Strategy Session", "3 - 1 Hour Training Sessions", "Connect Messenger (Slack, Telegram)", "Connect Email (Gmail, Outlook, etc)", "Connect up to 9 Social Accounts (Meta, YouTube, etc)", "Connect 2 Custom Apps (ClickUp, Asana, etc)", "4 Custom Skills", "4 Custom Subagents", "Model Optimization", "30 Days Customer Support"]
       }];
 
     function KI({
@@ -14737,7 +14723,7 @@ Error generating stack: ` + n.message + `
       const a = lt.useRef(null),
         u = lt.useRef(null),
         i = lt.useRef(null),
-        [l, o] = lt.useState(1);
+        [l, o] = lt.useState(0);
       lt.useLayoutEffect(() => {
         const f = It.context(() => {
           It.fromTo(u.current, {
@@ -14871,11 +14857,11 @@ Error generating stack: ` + n.message + `
           }), O.jsx("div", {
             "code-path": "src/sections/FlatPricingSection.tsx:147:9",
             ref: i,
-            className: "grid grid-cols-1 md:grid-cols-3 gap-6",
+            className: "flex justify-center",
             children: j2.map((f, p) => O.jsxs("div", {
               "code-path": "src/sections/FlatPricingSection.tsx:149:13",
               onClick: () => o(p),
-              className: `flat-card relative rounded-3xl p-6 flex flex-col cursor-pointer transition-all duration-200 ${l===p?"bg-white border-2 border-white":"bg-white border-2 border-[#111111]/10 hover:border-[#111111]/30"}`,
+              className: `flat-card relative rounded-3xl p-6 flex flex-col cursor-pointer transition-all duration-200 w-full max-w-md ${l===p?"bg-white border-2 border-white":"bg-white border-2 border-[#111111]/10 hover:border-[#111111]/30"}`,
               style: {
                 boxShadow: l === p ? "0 8px 0 rgba(0,0,0,0.12)" : "0 4px 0 rgba(0,0,0,0.06)"
               },
